@@ -166,6 +166,10 @@ class Field_behavior
 												) ;
 								break;
 				case 'wysiwyg' :
+								$field = array(
+												'type' => 'TEXT'
+												) ;
+								break;
 				case 'wysiwyg_basic':
 								$field = array(
 												'type' => 'TEXT',
