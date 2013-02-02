@@ -486,7 +486,7 @@ class Model extends Admin_Controller
 		$data['name'] = $this->input->post('name', TRUE);
 		$data['description'] = $this->input->post('description', TRUE);
 		$data['type'] = $this->input->post('type', TRUE);
-		$data['length'] = $this->input->post('length', TRUE);
+		$data['length'] = $this->input->post('length', TRUE)?$this->input->post('length', TRUE):10;
 		$data['values'] = $this->input->post('values', TRUE);
 		$data['width'] = $this->input->post('width', TRUE) ? $this->input->post('width', TRUE) : 0;
 		$data['height'] = $this->input->post('height', TRUE) ? $this->input->post('height', TRUE) : 0;
